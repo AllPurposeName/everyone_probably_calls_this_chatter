@@ -80,5 +80,5 @@ rails s
 Finally open a browser and a private browser. Use each to select a different
 user, and enjoy chatting.
 
-Don't forget to use :wave: or some other emoji to see the benefits of that extra
+Don't forget to use `:wave:` or some other emoji to see the benefits of that extra
 little feature.
