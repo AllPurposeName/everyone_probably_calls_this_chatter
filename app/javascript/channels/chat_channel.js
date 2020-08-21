@@ -16,6 +16,7 @@ consumer.subscriptions.create(
 
     received(data) {
       $('.messages').append(`<p class="align-right">${data['message']['body']}  --  ${data['message']['current_user']}</p>`)
+      $('#message_body').val(null)
     }
   });
 });
