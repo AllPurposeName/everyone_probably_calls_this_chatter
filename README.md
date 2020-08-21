@@ -53,7 +53,7 @@ constraining myself to a limited time frame. If I were to pick this project back
 up, that's where I would start.
 
 I'm not exactly happy with the way current user is handled. It leads to a bug I
-[described in this commit](). The other small problem I have is with the hidden
+[described in this commit](https://github.com/AllPurposeName/everyone_probably_calls_this_chatter/commit/c4f4493ad55ef8d65fe6b02fd94e9fcbed40ea8c). The other small problem I have is with the hidden
 fields I use to add data to the message being passed around. I think using a
 more sophisticated form which knows from the outset those things. Essentially
 instead of working on `form_with Message`, use `form_with
