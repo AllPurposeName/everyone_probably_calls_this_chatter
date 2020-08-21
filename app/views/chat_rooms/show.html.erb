@@ -1,0 +1,14 @@
+<h1><%= @chat_room.title %></h1>
+
+<div class="messages" data-chat-room-id=<%= @chat_room.id %>>
+  <% @chat_room.messages.each do |message| %>
+      <p class="align-<%= message.user.id == @current_user.id ? 'right' : 'left' %>"> <%= message.body %>  --  <%= message.user.name %> </p>
+  <% end %>
+</div>
+
+<%= form_with(model: Message, url: messages_path, method: :post, html: { class: 'post-message' }, remote: true) do |f| %>
+  <%= f.text_field :body %>
+  <%= hidden_field_tag(:chat_room_id, @chat_room.id) %>
+  <%= hidden_field_tag(:current_user_id, @chat_room.current_user_id) %>
+  <%= submit_tag("send") %>
+<% end %>

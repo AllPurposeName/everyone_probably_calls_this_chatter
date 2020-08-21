@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  mount ActionCable.server => '/cable'
+
+  root 'users#pick_user'
+  get 'user/signin/:id', to: 'users#sign_in', as: :user_sign_in
+  resources :messages, only: [:create]
+  resources :chat_rooms, only: [:index, :show]
 end

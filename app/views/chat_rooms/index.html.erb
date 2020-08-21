@@ -1,0 +1,3 @@
+<% @chat_rooms.each do |chat_room| %>
+  <%= link_to("Chat with #{chat_room.other_user(@current_user).name}", chat_room_path(chat_room.id)) %>
+<% end %>
