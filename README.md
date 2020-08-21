@@ -60,3 +60,25 @@ instead of working on `form_with Message`, use `form_with
 @my_decorator_message`. More control in that thing being passed around usually
 opens these things up to extensibility. Fighting against the Rails forms or
 whatever is never a battle you are happy about winning.
+
+
+## Instructions
+Once you clone the repo, run initial setup:
+```
+bundle install
+yarn install
+```
+
+Once that is done run the test, migrations, and seed then start the server:
+```
+rake test
+rails db:migrate
+rails db:seed
+rails s
+```
+
+Finally open a browser and a private browser. Use each to select a different
+user, and enjoy chatting.
+
+Don't forget to use :wave: or some other emoji to see the benefits of that extra
+little feature.
