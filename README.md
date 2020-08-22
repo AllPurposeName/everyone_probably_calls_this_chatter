@@ -77,6 +77,11 @@ rails db:seed
 rails s
 ```
 
+Ensure a redis server is running locally:
+```
+redis-server
+```
+
 Finally open a browser and a private browser. Use each to select a different
 user, and enjoy chatting.
 
